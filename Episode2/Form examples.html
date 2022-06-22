@@ -8,13 +8,14 @@
     <title>Form examples</title>
     <style>
         table,th,td{
-        border: 1px solid black;
+        border: 1px ridge black;
+        border-style: ridge;
     }
     </style>
 </head>
 <body>
     <form>
-    <table>
+    <table >
         <tbody>
             <tr>
                 <td><label for="name">Ad</label></td>
@@ -26,11 +27,11 @@
             </tr>
             <tr>
                 <td><label for="age">Yaş</label></td>
-                <td><input type="number" name="age" id="age"></td>
+                <td><input type="number" placeholder="Yaşınızı girin" name="age" id="age"></td>
             </tr>
             <tr>
                 <td><label for="addpicture">Resim Ekle</label></td>
-                <td><input type="file" name="addpicture" id="addpicture"></td>
+                <td><input type="file" name="addpicture" accept="image/*" id="addpicture"></td>
             </tr>
             <tr>
                 <td><label for="TC">TC No</label></td>
