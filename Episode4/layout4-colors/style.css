@@ -1,0 +1,11 @@
+h1{
+    color: red;
+    /* background-color: blue; */
+
+    color: rgb(255, 0, 0);
+    opacity: 0.4;
+    
+    color: rgba(119, 25, 170, 0.4);
+
+    color: #289e74;;
+}

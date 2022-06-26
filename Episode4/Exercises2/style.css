@@ -1,0 +1,21 @@
+* {
+    text-align: center;
+    padding: 8px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(even){background-color: aquamarine}
+
+tr:nth-child(even){color: brown ; font-weight:bold ;}
+
+td {
+    border: 2px solid white;
+  }
+
+th {
+    border-top: 1px solid gray;
+}

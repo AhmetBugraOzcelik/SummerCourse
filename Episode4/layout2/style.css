@@ -1,0 +1,23 @@
+*  {
+    font-size: 30px;
+}
+#header{
+    color: red;
+}
+.info{
+    background-color: blue;
+}
+#blue, .blue{
+    color: aqua;
+}#red.blue{
+    color: red;
+}
+ul li a{
+    text-decoration: none;
+}
+.info span{
+    background-color: darkblue;
+}
+.info #a{
+    color: pink;
+}

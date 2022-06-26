@@ -1,0 +1,23 @@
+#box-1{
+    background-color: #a7a7a7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /*If width and height equal Border-radius border becomes round*/
+}
+.box-2{
+    /* border-width: 4px;
+    border-color: red;
+    border-style: solid; 
+    border-style: dotted;
+    border-style: outset;
+    
+    border: 5px red solid; */
+
+    /* border-left-width: 5px;
+    border-left-color: aqua;
+    border-left-style: outset; */
+
+    border: 10px red solid;
+    border-radius: 20px;
+}

@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(to right , black , yellow);
+}
+
+.box {
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    padding:20px 0px 20px 0px;
+    margin: 40px auto;
+}

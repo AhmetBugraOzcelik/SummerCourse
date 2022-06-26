@@ -1,0 +1,26 @@
+body{
+    background-image: url("../images/world-png.webp");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    
+    /* background-position: center top; */
+    /* background-position: center; */
+
+    background:  /*#ffffff*/ url("..//images/world-png.webp") no-repeat center fixed; 
+    background-size: 100px;
+}
+.box-1{
+    width: 640px;
+    /* background-color: seagreen; */
+    background: seagreen;
+    color: white;
+}
+.box-2{
+    color: white;
+    background-image: url("../images/Background2.png");
+    width: 640px;
+    height: 360px;
+    background-size: cover;
+}
