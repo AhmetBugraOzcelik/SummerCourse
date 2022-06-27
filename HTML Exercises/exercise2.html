@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise2</title>
+    <style>
+        table{
+            padding: 50px;
+            border: 1px solid black;
+        }
+        th, td {
+    padding: 7px;
+    text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table style="margin-left: 20px; background-color: orange;">
+        <tbody>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="surname">Surname</label></td>
+                <td><input type="text" name="surname" id="surname"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>How many pieces of fruit <br> do you eat per today?</td>
+                <td style="text-align: left;" rowspan="3"><input type="radio" name="eat" value="0"> 0<br>
+                <input type="radio" name="eat" value="1"> 1 <br>
+                <input type="radio" name="eat" value="2"> 2<br>
+                <input type="radio" name="eat" value="More than 2"> More than 2</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td style="vertical-align: top; text-align: right;">My favorite fruit is</td>
+                <td style="text-align: left;">
+                <select  name="fruit" id="fruit" multiple size="4">
+                    <option value="apple">Apple</option>
+                    <option value="pineapple">Pineapple</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="orange">Orange</option>
+                    <option value="strawberry">Strawberry</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2"><label for="brochure">Would you like a <br>brochure?</label></td>
+                <td rowspan="2" style="text-align: left;" ><input type="checkbox" name="brochure" id="brochure"></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td style="float: left;"><input type="submit"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
