@@ -1,0 +1,48 @@
+.border {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 12%;
+    border: 1px solid blue;
+}
+
+h6 {
+    margin: 0;
+    margin-left: 7px;
+    margin-bottom: 5px;
+    font-size: 0.6em;
+    color: blue;
+}
+
+label {
+    font-size: 0.6rem;
+}
+
+input[type='checkbox'] {
+    width: 20%;
+    height: 20%;
+}
+
+.scroll {
+    width: 100px;
+    height: 80px;
+    overflow-y: scroll;
+    margin: 0 0 -0.1rem 0;
+ }
+ .scroll::-webkit-scrollbar {
+     width: 5px;
+ }
+ 
+ .scroll::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+     height: 10px;
+ }
+ 
+ .scroll::-webkit-scrollbar-thumb {
+    background-color: blue;
+     height: 10px;
+     
+ }

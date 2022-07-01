@@ -1,0 +1,31 @@
+/* p:first-child {
+    background: black;
+}
+
+p:last-child {
+    background: red;
+}
+
+p:nth-child(3) {
+    color: aqua;
+}
+
+p:nth-child(even) {
+    color: red;
+}   
+
+p:nth-child(odd) {
+    color: blue;
+} */
+
+ul li:nth-child(2n) {
+    color: red;
+}
+
+ul li:nth-child(2n+1) {
+    color: blue;
+}
+
+ul li:nth-child(n+5) {
+    background: black;
+}

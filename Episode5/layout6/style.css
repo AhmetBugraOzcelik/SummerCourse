@@ -1,0 +1,11 @@
+img {
+    width: 30%;
+}
+
+#one {
+    float: left;
+}
+
+#two {
+    float: right;
+}

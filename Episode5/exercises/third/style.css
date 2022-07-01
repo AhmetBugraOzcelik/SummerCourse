@@ -1,0 +1,41 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    width: 30%;
+    height: 360px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 20px 20px whitesmoke;
+}
+
+img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+p {
+    margin: 11px;
+    color: gray;
+    font-weight: normal;
+    font-size: 0.8em;
+    opacity: 0.5;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: palevioletred;
+    margin: 10px;
+}
+
+#div2 {
+    color: palevioletred;
+    margin: 0.4rem 0.9rem 0.2rem 0;
+}
+
+i {
+    margin: 0 0.2rem;
+}
