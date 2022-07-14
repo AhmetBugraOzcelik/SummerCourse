@@ -100,7 +100,6 @@ html {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    padding-left: 5rem;
 }
 
 .courses .course {
