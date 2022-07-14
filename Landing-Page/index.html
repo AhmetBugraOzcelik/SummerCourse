@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycles</title>
+    <meta name="keyword" content="Motorcycles,Motor,Speed">
+    <meta name="description" content="Motorcycles">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-dark-gray">
+        <div class="container">
+            <nav id="navbar">
+                <h1 class="heading-small">Motorcycles</h1>
+    
+                <ul>
+                    <li><a href="#home">Home page</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#wallpapers">Wallpapers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <img src="images/Kenan.jpg" alt="Kenan with h2">
+
+        <div class="name text-center">
+            <h2 class=".heading-big">Kenan Sofuoğlu</h2>
+            <p>champion of the world</p>
+        </div>
+
+        <a href="#catalog" class="btn btn-primary">Go to Catalogs</a>
+    </section>
+
+    <section id="training" class="bg-dark-gray">
+        <h3 class="text-center heading-medium">Catalogs</h3>
+
+        <div class="items">
+            <article class="item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>H2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nihil!</p>
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>H2R</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nihil!</p>
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>CBR1000RR</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nihil!</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h3 class="text-center heading-medium">Courses</h3>
+        <!--Course 1-->
+        <div class="container">
+            <div class="courses">
+                <div class="course">
+                    <div class="course-image">
+                        <img src="images/scrambler-motosiklet_1810911_m.jpg" alt="motor">
+                        <span>%90 İndirim</span>
+                    </div>
+                        <div class="course-info">
+                            <div class="title">Tam eğitim</div>
+                            <div class="description">Süper Sürücü Olun</div>
+                            <div class="instructor courses-style">Ahmet Buğra Özçelik</div>
+                            <div class="rating courses-style">9.2 | (1276 Oylama)</div>
+                        </div>
+                </div>
+        <!--Course 2-->
+        <div class="course">
+            <div class="course-image">
+                <img src="images/scrambler-motosiklet_1810911_m.jpg" alt="motor">
+                <span>%90 İndirim</span>
+            </div>
+                <div class="course-info">
+                    <div class="title">Tam eğitim</div>
+                    <div class="description">Süper Sürücü Olun</div>
+                    <div class="instructor courses-style">Ahmet Buğra Özçelik</div>
+                    <div class="rating courses-style">9.2 | (1276 Oylama)</div>
+                </div>
+        </div>
+        <!--Course 3-->
+        <div class="course">
+            <div class="course-image">
+                <img src="images/scrambler-motosiklet_1810911_m.jpg" alt="motor">
+                <span>%90 İndirim</span>
+            </div>
+                <div class="course-info">
+                    <div class="title">Tam eğitim</div>
+                    <div class="description">Süper Sürücü Olun</div>
+                    <div class="instructor courses-style">Ahmet Buğra Özçelik</div>
+                    <div class="rating courses-style">9.2 | (1276 Oylama)</div>
+                </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark-gray">
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">Bana Ulaşın</h4>
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="İsim">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea name="message" id="message" rows="5" class="form-control" placeholder="Mesajınız..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-block btn-primary btn-primary:hover ">Gönder</button>
+            </form>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
