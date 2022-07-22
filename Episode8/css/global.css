@@ -17,3 +17,10 @@
 box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
 }
 
+.box {
+    width: 20%;
+    height: 220px;
+    background: white;
+    border-radius: 15px;
+}
+

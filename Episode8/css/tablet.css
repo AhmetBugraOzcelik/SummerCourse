@@ -9,6 +9,7 @@
 
 nav {
     justify-content: center;
+    padding-top: 1rem;
 }
 
 nav ul {
@@ -16,10 +17,6 @@ nav ul {
     height: 100px;
     flex-wrap: nowrap;
     justify-content: space-around;
-}
-
-#empty {
-    display: block;
 }
 
 #nav-right {
@@ -43,12 +40,12 @@ nav ul {
     left: 2rem;
 }
 
-#nav-menu-bar li i {
+#nav-menu-bar i {
     font-size: 2.5rem;
 }
 
 a[href="#englitastic"] {
-    font-size: 1.2rem;
+    font-size: 1rem;
     justify-self: center;
 }
 
@@ -59,48 +56,54 @@ a[href="#englitastic"] {
 
 /* Center-Card styling */
 
-#center-card-main {
-    width: 70%;
-    height: 33%;
+#card {
+    padding-top: 0.2rem;
+    width: 75vw;
+    height: 180px;
     background: rgba(58, 57, 57, 0.7);
 }
 
-#container div{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 0.8rem 0;
-}
-
-#card div p {
+#card p {
     padding-top: 0.25rem;
-    font-size: 1.2em;
+    font-size: 1.5em;
     display: flex;
     justify-content: center;
 }
 
 #card div input {
-    width: 75%;
-    height: 2rem;
+    width: 60%;
+    height: 2.5rem;
     padding: 0.2rem 0 0.2rem 1rem;
     font-size: 1em;
 }
 
 #card div button {
     background: #FFC300;
-    width: 3.25rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#card div button i {
+#card button i {
     font-size: 1rem;
 }
 
-@media (max-width:633px) {
-    #card div p {
+@media (max-width:883px) {
+    #card p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:592px) {
+    #card p {
         font-size: 1em;
+    }
+}
+
+@media (max-width:538px) {
+    #card div input {
+        font-size: 0.8em;
     }
 }
