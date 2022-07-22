@@ -1,0 +1,19 @@
+
+.text-center {
+    text-align: center;
+}
+
+/* Border */
+
+.border-delete {
+    border: 0;
+}
+
+/* Section-Kurslar */
+
+.box:hover {
+    -webkit-box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
+box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
+}
+

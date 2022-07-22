@@ -1,0 +1,324 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 { font-weight:normal; }
+
+
+html {
+    font-family: 'Sniglet', cursive;
+}
+
+/* Nav Header */
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+#nav-menu-bar {
+    display: none;
+} 
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #nav-right ul li button:last-child {
+    margin-right: 0;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 1rem;
+}
+
+#nav-right li {
+    margin: 0.5rem;
+}
+
+#nav-right li:last-child {
+    margin-right: 0;
+}
+
+#cap1 {
+    font-size: 3rem;
+    margin-right: 0.5rem;
+}
+
+#empty {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
+}
+
+#nav-left {
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+#nav-left i, #nav-left a{
+    color: #FFC300;
+}
+
+#nav-right li i {
+    color: #fff;
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.5rem;
+}
+
+#nav-button {
+    width: 100%;
+    padding: 0.4rem 1rem;
+    height: auto;
+    color: #fff;
+    background: #FFC300;
+    font-size: 1em;
+    border: 0;
+}
+
+a[href="#englitastic"] {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Header main*/
+
+#main-header {
+    width: 100%;
+    height: 713px;
+}
+
+#center-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#bg {
+    background: url(../images/computer-768696_1920.png);
+    width: 100%;
+    height: 768px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+#card {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background: rgba(58, 57, 57, 0.7);
+}
+
+/* Center-Card styling */
+
+#card div{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0;
+}
+
+#card div{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#card p {
+    padding-top: 0.5rem;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+}
+
+#card div button {
+    background: #FFC300;
+    width: 3.25rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card div input {
+    font-family: 'Sniglet', cursive;
+    width: 75%;
+    height: 3rem;
+    padding: 1rem 0 1rem 0.2rem;
+    font-size: 1em;
+}
+
+#card div div button i {
+    font-size: 1.5rem;
+}
+
+input::-webkit-input-placeholder {
+    color: #6F6C6C; /*Change the placeholder color*/
+    opacity: 0.5; /*Change the opacity between 0 and 1*/
+}
+
+/* Section-Kurslar */
+
+#section-kurslar {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(230, 230, 230);
+    width: 100%;
+    height: 800px;
+}
+
+.container-section {
+    max-width: 1100px;
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.boxs {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    padding-right: 0.5rem;
+    margin: 5rem 2rem;
+    width:  17%;
+    height: 238px;
+    background: white;
+    border-radius: 15px;
+}
+
+.section-kurslar-img-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.box:first-child {
+    margin-left: 0;
+}
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.section-kurslar-img-div h3 {
+    width: 40%;
+    text-align: end;
+    margin-right: 1.2rem;
+}
+
+img[src="images/japan-26803_640.png"] {
+    padding: 1rem;
+}
+
+.boxs div  div img {
+    width: 50%;
+}
+
+div.box div.text-center {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+@media (max-width : 1279px) {
+
+    .box:first-child {
+        margin-left: 1rem;
+    }
+    
+    .box:last-child {
+        margin-right: 1rem;
+    }
+
+    .container-section {
+        max-width: 1337px;
+        height: 800px;
+        margin: 0 auto;
+        padding-top: 3em;
+    }
+
+    .container-section h3 {
+        margin-bottom: 2rem;
+    }
+
+    .boxs {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        align-content: flex-start;
+    }
+    
+    .box {
+        padding: 1rem;
+        margin: 1rem 1rem;
+        width: 40%;
+        height: 200px;
+        font-size: 1em;
+    }
+
+    .boxs div  div img {
+        width: 20%;
+    }
+
+    .section-kurslar-img-div h3 {
+        width: 40%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+
+
+
