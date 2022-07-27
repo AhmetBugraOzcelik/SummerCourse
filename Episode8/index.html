@@ -11,8 +11,39 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="(max-width:923px)" href="css/tablet.css">
     <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css">
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Slider css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .slick-dots li.slick-active button:before {
+            opacity: .75;
+            color: red;
+        }
+
+        .slick-dots li button:before {
+            top: 10px;
+            font-size: 1rem;
+            color: gray;
+            opacity: 0.5;
+        }
+
+        .slick-slider .slick-list, .slick-slider .slick-track {
+            padding:1rem 0;
+        }
+
+        .slick-list {
+            padding: 0;
+        }
+        
+    </style>
 </head>
 <body>
         <header>
@@ -57,10 +88,12 @@
         <!--Section-Kurslar-->
 
         <section id="kurslar">
+
             <div class="container">
+
                 <h3 class="text-center">Avantajlı Kurslarımız</h3>
                 <div id="boxs">
-                    <div class="box">
+                    <div class="box-kurs">
                         <div class="kurslar-top">
                             <div>
                                 <img src="images/canada-2906822_1920.png" alt="Canada">
@@ -73,7 +106,7 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box-kurs">
                         <div class="kurslar-top">
                             <div>
                                 <img src="images/japan-26803_640.png" alt="Japan">
@@ -86,7 +119,7 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box-kurs">
                         <div class="kurslar-top">
                             <div>
                                 <img src="images/french-flag-1053711_640.png" alt="France">
@@ -99,7 +132,7 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box-kurs" id="box-mobile">
                         <div class="kurslar-top">
                             <div>
                                 <img src="images/flag-2694986_1280.png" alt="İtaly">
@@ -113,7 +146,194 @@
                         </div>
                     </div>
                 </div>
+                <div class="dots">
+                    <i class="fa-solid fa-circle"></i>
+                    <i id="reddot" class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>       
+
+                <!--Populer Kurslar-->
+
+                <h2 class="text-center h2">Popüler Dersler</h3>
+                <div id="boxs-dersler">
+                    <!-- <div id="left-left-right-icon" class="icon-left-right-kurslar"><i class="fa-solid fa-angle-left"></i></div> -->
+
+                    <div class="box-ders">
+                        <div>
+                            <img src="images/Rectangle 51.png" alt="51">
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Turizm İngilizcesi</h4>
+                            </div>
+                            <hr>
+                            <div class="bottom-kurslar">
+                                <div class="icons-kurslar">
+                                    <div>
+                                        <i class="fa-solid fa-user"></i>
+                                        <p>356</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-comment-dots"></i>
+                                        <p>16</p>
+                                    </div>
+                                </div>
+                                <div class="btn-kurslar">
+                                    <button>Satın al</button>
+                                </div>
+                            </div>
+                            <div class="fiyat-kurslar"><p>70.00 ₺</p></div>
+                        </div>
+                    </div>
+
+                    <div class="box-ders" id="middle-box-ders">
+                        <div>
+                            <img src="images/Rectangle 67.png" alt="67">
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Turizm İngilizcesi</h4>
+                            </div>
+                            <hr>
+                            <div class="bottom-kurslar">
+                                <div class="icons-kurslar">
+                                    <div>
+                                        <i class="fa-solid fa-user"></i>
+                                        <p>356</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-comment-dots"></i>
+                                        <p>16</p>
+                                    </div>
+                                </div>
+                                <div class="btn-kurslar">
+                                    <button>Satın al</button>
+                                </div>
+                            </div>
+                            <div class="fiyat-kurslar"><p>100.00 ₺</p></div>
+                        </div>
+                    </div>
+
+                    <div class="box-ders">
+                        <div>
+                            <img src="images/Rectangle 63.png" alt="63">
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Turizm İngilizcesi</h4>
+                            </div>
+                            <hr>
+                            <div class="bottom-kurslar">
+                                <div class="icons-kurslar">
+                                    <div>
+                                        <i class="fa-solid fa-user"></i>
+                                        <p>356</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-comment-dots"></i>
+                                        <p>16</p>
+                                    </div>
+                                </div>
+                                <div class="btn-kurslar">
+                                    <button>Satın al</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fiyat-kurslar"><p>150.00 ₺</p></div>
+                    </div>
+
+                    <div class="box-ders">
+                        <div>
+                            <img src="images/Rectangle 63.png" alt="63">
+                        </div>
+                        <div>
+                            <div>
+                                <h4>Turizm İngilizcesi</h4>
+                            </div>
+                            <hr>
+                            <div class="bottom-kurslar">
+                                <div class="icons-kurslar">
+                                    <div>
+                                        <i class="fa-solid fa-user"></i>
+                                        <p>356</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-comment-dots"></i>
+                                        <p>16</p>
+                                    </div>
+                                </div>
+                                <div class="btn-kurslar">
+                                    <button>Satın al</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fiyat-kurslar"><p>150.00 ₺</p></div>
+                    </div>
+
+
+                    <!-- <div class="icon-left-right-kurslar"><i class="fa-solid fa-angle-right"></i></div> -->
+
+                </div>
+                
+                <div id="bottompage-kurslar">
+                    <!-- <div>
+                        <i class="fa-solid fa-circle"></i>
+                        <i id="reddot" class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-circle"></i>
+                    </div> -->
+    
+                    <div>
+                        <button>Daha Fazla Ders</button>
+                    </div>
+                </div>
+
             </div>
         </section>
+
+        <!-- Section-Comment -->
+
+        <section>
+            <div class="bg-comment">
+            <div class="container">
+                <div class="main-comment">
+                    <div class="icon">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div id="card-comment">
+                        <div id="top-comment-box">
+                            <div>
+                                <img src="images/Ellipse 19.png" alt="19">
+                                <img src="images/Ellipse 12.png" alt="12">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptate distinctio repellendus, officiis eius, accusamus quo iste dolor necessitatibus, eos maxime dolores. Porro quasi labore doloremque necessitatibus cum nulla nesciunt! Consequatur praesentium qui cupiditate, cum quo magnam, exercitationem fuga sed, quis ex animi. Pariatur eum a incidunt repudiandae est modi.</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="Js/app.js"></script>
 </body>
 </html>

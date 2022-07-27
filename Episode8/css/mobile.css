@@ -115,3 +115,163 @@ a[href="#englitastic"] {
         margin-right: 0.5rem;
     }
 }
+
+ /* Section-Kurslar */
+
+ .box-kurs {
+    display: none;
+ }
+
+ #kurslar h3 {
+    display: none;
+}
+
+ #box-mobile {
+    display: block;
+    font-size: 0.8em;
+    width: 60%;
+    height: 250px;
+    padding: 0 0.5rem;
+ }
+
+ .kurslar-top div img {
+    width: 100%;
+    height: 90%;
+ }
+
+ .kurslar-top {
+    height: 60%;
+    font-size: 1.5em;
+    font-weight: bold;
+ }
+
+ .dots {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+#reddot {
+    margin: 0 0.5rem;
+    color: red;
+}
+
+ #box-mobile .kurslar-bottom {
+    height: 40%;
+ }
+
+ @media (max-width:432px) {
+    .kurslar-top div img {
+        width: 100%;
+        height: 80%;
+     }
+     
+     #box-mobile {
+        height: 200px;
+     }
+ }
+
+ @media (max-width:350px) {
+    .kurslar-top div img {
+        width: 100%;
+        height: 70%;
+     }
+ }
+
+ @media (max-width:300px) {
+
+    .kurslar-top div img {
+        width: 100%;
+        height: 60%;
+     }
+
+     #box-mobile .kurslar-top {
+        font-size: 1.2em;
+     }
+ }
+
+ /* Populer kurslar */
+
+ #bottompage-kurslar {
+    display: none;
+ }
+
+ .box-ders {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+ .box-ders div h4 {
+    margin: 0.5rem 0;
+ }
+
+ .bottom-kurslar {
+    margin: 0.5rem 0.5rem;
+ }
+
+ .box-ders {
+    font-size: 0.6em;
+ }
+
+ .bottom-kurslar .btn-kurslar button {
+    height: 25px;
+    width: 70%;
+    font-size: 0.8em;
+ }
+
+ .fiyat-kurslar {
+    width: 35%;
+    height: 25px;
+    font-size: 1em;
+    left: 6px;
+ }
+
+ @media (max-width :344px) {
+    .icons-kurslar div {
+        font-size: 0.5rem;
+    }
+    .icons-kurslar div p {
+        margin-left: 0.2rem;
+     }
+ }
+
+ @media (max-width : 296px) {
+    .icons-kurslar div {
+        font-size: 0.4rem;
+    }
+
+    .fiyat-kurslar {
+        width: 35%;
+        height: 28px;
+        font-size: 0.8em;
+     }
+ }
+
+ /* Section-Kurslar */
+
+ /* Section-Comment */
+
+#top-comment-box i {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+img[src="images/Ellipse 12.png"] {
+    display: none;
+}
+
+img[src="images/Ellipse 19.png"] {
+    display: block;
+}
+
+#card-comment div:first-child img {
+    width: 100%;
+}
+
+#card-comment div:last-child p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+ 

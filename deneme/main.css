@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 300px;
+    height: 100px !important;
+    background: red;
+    margin: 0 1rem;
+}
+
+.box-kurs {
+    margin: 1rem;
+    width: 200px;
+    height: 220px;
+    background: white;
+    border-radius: 15px;
+}
+
+.icon-left-right-kurslar {
+    display: none;
+}
+
+.kurslar-top div img {
+    width: 100px;
+    height: 100px;
+}
+
+img[src="images/japan-26803_640.png"] {
+    padding: 1rem;
+}
+
+.kurslar-top {
+    display: flex;
+    height: 50%;
+}
+
+.kurslar-top div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: blue;
+}
+
+.container {
+    max-width: 200px;
+    margin: 0 auto;
+}

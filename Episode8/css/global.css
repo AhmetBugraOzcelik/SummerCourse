@@ -11,16 +11,38 @@
 
 /* Section-Kurslar */
 
-.box:hover {
+.box-kurs:hover {
     -webkit-box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
 -moz-box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
 box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
 }
 
-.box {
+.slick-center {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: transform 0.5s;
+
+
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: red;
+}
+
+.box-kurs {
     width: 20%;
     height: 220px;
     background: white;
     border-radius: 15px;
 }
 
+.box-ders {
+    margin: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    width: 200px;
+    height: 500px;
+    background: white
+}
