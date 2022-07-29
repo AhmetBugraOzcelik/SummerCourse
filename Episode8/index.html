@@ -29,10 +29,10 @@
         }
 
         .slick-dots li button:before {
-            top: 10px;
             font-size: 1rem;
             color: gray;
             opacity: 0.5;
+            padding-bottom: 0.5rem;
         }
 
         .slick-slider .slick-list, .slick-slider .slick-track {
@@ -42,7 +42,36 @@
         .slick-list {
             padding: 0;
         }
-        
+
+        .box-ders .slick-slider .slick-list, .slick-slider .slick-track {
+            padding: 2.2rem 0rem;
+        }
+/* 
+        .slick-next:focus:before, .slick-next:hover:before, .slick-prev:focus:before, .slick-prev:hover:before {
+            color: gray;
+        } */
+
+        .slick-next:before {
+            content: ">" !important;
+            font-family: monospace;
+            font-size: 2rem;
+            color: gray;
+            line-height: 0;
+        }
+
+        .slick-prev::before {
+            content: "<" !important;
+            font-family: monospace;
+            font-size: 2rem;
+            color: gray;
+            line-height: 0;
+        }
+
+        /* @media (max-width : 340px) {
+            .slick-next {
+                right: 10px;
+            }
+        } */
     </style>
 </head>
 <body>
@@ -92,40 +121,15 @@
             <div class="container">
 
                 <h3 class="text-center">Avantajlı Kurslarımız</h3>
-                <div id="boxs">
-                    <div class="box-kurs">
+
+                <div class="boxs">
+                    <div class="box-kurs" id="box-mobile">
                         <div class="kurslar-top">
                             <div>
-                                <img src="images/canada-2906822_1920.png" alt="Canada">
-                            </div>
-                            <div>
-                                <p>İngilizce</p>
-                            </div>
-                        </div>
-                        <div class="kurslar-bottom text-center">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
-                        </div>
-                    </div>
-                    <div class="box-kurs">
-                        <div class="kurslar-top">
-                            <div>
-                                <img src="images/japan-26803_640.png" alt="Japan">
+                                <img src="images/flag-2694986_1280.png" alt="İtaly">
                             </div>
                             <div>
                                 <p>Rusca</p>
-                            </div>
-                        </div>
-                        <div class="kurslar-bottom text-center">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
-                        </div>
-                    </div>
-                    <div class="box-kurs">
-                        <div class="kurslar-top">
-                            <div>
-                                <img src="images/french-flag-1053711_640.png" alt="France">
-                            </div>
-                            <div>
-                                <p>İngilizce</p>
                             </div>
                         </div>
                         <div class="kurslar-bottom text-center">
@@ -145,12 +149,39 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
                         </div>
                     </div>
-                </div>
-                <div class="dots">
+                    <div class="box-kurs" id="box-mobile">
+                        <div class="kurslar-top">
+                            <div>
+                                <img src="images/flag-2694986_1280.png" alt="İtaly">
+                            </div>
+                            <div>
+                                <p>Rusca</p>
+                            </div>
+                        </div>
+                        <div class="kurslar-bottom text-center">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
+                        </div>
+                    </div>
+                    <div class="box-kurs" id="box-mobile">
+                        <div class="kurslar-top">
+                            <div>
+                                <img src="images/flag-2694986_1280.png" alt="İtaly">
+                            </div>
+                            <div>
+                                <p>Rusca</p>
+                            </div>
+                        </div>
+                        <div class="kurslar-bottom text-center">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, dignissimos.</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- <div class="dots">
                     <i class="fa-solid fa-circle"></i>
                     <i id="reddot" class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle"></i>
-                </div>       
+                </div>        -->
 
                 <!--Populer Kurslar-->
 
@@ -186,9 +217,9 @@
                         </div>
                     </div>
 
-                    <div class="box-ders" id="middle-box-ders">
+                    <div class="box-ders">
                         <div>
-                            <img src="images/Rectangle 67.png" alt="67">
+                            <img src="images/Rectangle 51.png" alt="51">
                         </div>
                         <div>
                             <div>
@@ -210,13 +241,13 @@
                                     <button>Satın al</button>
                                 </div>
                             </div>
-                            <div class="fiyat-kurslar"><p>100.00 ₺</p></div>
+                            <div class="fiyat-kurslar"><p>70.00 ₺</p></div>
                         </div>
                     </div>
 
                     <div class="box-ders">
                         <div>
-                            <img src="images/Rectangle 63.png" alt="63">
+                            <img src="images/Rectangle 51.png" alt="51">
                         </div>
                         <div>
                             <div>
@@ -238,13 +269,13 @@
                                     <button>Satın al</button>
                                 </div>
                             </div>
+                            <div class="fiyat-kurslar"><p>70.00 ₺</p></div>
                         </div>
-                        <div class="fiyat-kurslar"><p>150.00 ₺</p></div>
                     </div>
 
                     <div class="box-ders">
                         <div>
-                            <img src="images/Rectangle 63.png" alt="63">
+                            <img src="images/Rectangle 51.png" alt="51">
                         </div>
                         <div>
                             <div>
@@ -266,10 +297,9 @@
                                     <button>Satın al</button>
                                 </div>
                             </div>
+                            <div class="fiyat-kurslar"><p>70.00 ₺</p></div>
                         </div>
-                        <div class="fiyat-kurslar"><p>150.00 ₺</p></div>
                     </div>
-
 
                     <!-- <div class="icon-left-right-kurslar"><i class="fa-solid fa-angle-right"></i></div> -->
 
@@ -286,7 +316,6 @@
                         <button>Daha Fazla Ders</button>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -296,10 +325,29 @@
             <div class="bg-comment">
             <div class="container">
                 <div class="main-comment">
-                    <div class="icon">
+                    <!-- <div class="icon">
                         <i class="fa-solid fa-angle-left"></i>
+                    </div> -->
+                    <div class="card-comment">
+                        <div id="top-comment-box">
+                            <div>
+                                <img src="images/Ellipse 19.png" alt="19">
+                                <img src="images/Ellipse 12.png" alt="12">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa esse in repudiandae enim vero distinctio neque, maxime quibusdam aliquid nulla ad ea est sapiente cum eaque, ab placeat alias, ipsa fugit. Hic at iste totam ad, autem excepturi veniam omnis molestias! Eius sequi fugiat voluptates totam enim! Sed quae consequuntur suscipit provident deleniti rerum recusandae id similique earum dicta sunt voluptatem ut ipsam expedita perspiciatis, aliquid, repellat labore pariatur esse minima! Labore debitis, quis, sed nobis eligendi magni unde optio corrupti porro quaerat modi numquam eius molestiae doloremque vel repellendus, deserunt sint ab in inventore dolorem odit voluptatem dolorum. Incidunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates optio reiciendis nisi alias debitis nemo molestiae ab quos corporis veniam eius sint harum ratione dolorum enim, non fuga eaque omnis iusto natus aliquid laudantium. Debitis temporibus enim commodi quo sequi, mollitia ratione nihil optio tempora earum hic laboriosam. Molestiae sint dolorem quidem, fuga iusto enim? Libero laboriosam, voluptas totam sit odio ab quos harum labore similique eos quidem atque, quo dicta rem recusandae! Sint voluptates explicabo, odio placeat ipsum temporibus facilis animi. Recusandae atque dolores qui. Sit esse accusamus itaque excepturi iusto cumque, cum voluptatum ducimus eos ea veritatis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem amet non nihil, culpa quae necessitatibus eius quaerat deserunt officia porro vero ipsum iste accusantium? Ex sapiente, tempora iste distinctio veniam voluptatum, repudiandae eum suscipit dicta quasi beatae natus totam consequuntur fuga adipisci atque incidunt nisi aliquam officiis! Officiis veritatis laborum et nobis autem eum vero laboriosam eligendi. Illo eum omnis soluta laudantium architecto repudiandae optio. Quos dicta animi saepe non, cum, ab nam maxime eos repellendus soluta id adipisci, laudantium ipsum similique repellat quidem rem debitis? Est perferendis amet doloremque neque voluptates id ab velit libero veritatis quo! Fugit.</p>
+                        </div>
                     </div>
-                    <div id="card-comment">
+
+                    <div class="card-comment">
                         <div id="top-comment-box">
                             <div>
                                 <img src="images/Ellipse 19.png" alt="19">
@@ -317,12 +365,35 @@
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptate distinctio repellendus, officiis eius, accusamus quo iste dolor necessitatibus, eos maxime dolores. Porro quasi labore doloremque necessitatibus cum nulla nesciunt! Consequatur praesentium qui cupiditate, cum quo magnam, exercitationem fuga sed, quis ex animi. Pariatur eum a incidunt repudiandae est modi.</p>
                         </div>
                     </div>
-                    <div class="icon">
-                        <i class="fa-solid fa-angle-right"></i>
+
+                    <div class="card-comment">
+                        <div id="top-comment-box">
+                            <div>
+                                <img src="images/Ellipse 19.png" alt="19">
+                                <img src="images/Ellipse 12.png" alt="12">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda voluptate distinctio repellendus, officiis eius, accusamus quo iste dolor necessitatibus, eos maxime dolores. Porro quasi labore doloremque necessitatibus cum nulla nesciunt! Consequatur praesentium qui cupiditate, cum quo magnam, exercitationem fuga sed, quis ex animi. Pariatur eum a incidunt repudiandae est modi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consequuntur possimus officiis ex error? Omnis voluptas cupiditate cum voluptatum saepe, culpa nesciunt laudantium rem itaque, quam accusamus repudiandae inventore soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vitae ad, inventore fugit exercitationem distinctio. Distinctio id veritatis eaque praesentium, doloremque dicta sapiente nulla quo similique aut illo maxime, quis tempora cumque ad illum velit minus cum expedita! Tenetur quo placeat facilis id quaerat, necessitatibus dignissimos est assumenda exercitationem similique voluptates doloribus officiis distinctio consequatur nemo provident, dolorum dolorem suscipit adipisci quos pariatur eligendi et! Fugiat minima autem nostrum quas officiis, eum aperiam sit assumenda facilis ipsa asperiores quis impedit expedita cumque magnam delectus dolor ullam voluptas, explicabo quae nobis nisi earum? Reiciendis, fugiat quis autem repudiandae quod laudantium ipsa.</p>
+                        </div>
                     </div>
+                    <!-- <div class="icon">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div> -->
                 </div>
             </div>
             </div>
+        </section>
+
+        <section>
+            
         </section>
 
 

@@ -4,6 +4,12 @@
 
 /* General */
 
+.container {
+    margin: auto;
+    padding: 0px 47px;
+    width: auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -215,17 +221,8 @@ input::-webkit-input-placeholder {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.icon-left-right-kurslar {
-    display: none;
-}
-
-#kurslar h3 {
-    margin-bottom: 2rem;
-}
-
-#boxs {
-    display: flex;
-    justify-content: space-between;
+#kurslar h3:first-child{
+    margin-bottom: 1rem;
 }
 
 .kurslar-top div img {
@@ -233,11 +230,16 @@ input::-webkit-input-placeholder {
     height: 100px;
 }
 
+.kurslar-top div:last-child p {
+    align-items: center;
+}
+
 img[src="images/japan-26803_640.png"] {
     padding: 1rem;
 }
 
 .kurslar-top {
+    align-items: center;
     display: flex;
     height: 50%;
 }
@@ -277,8 +279,7 @@ img[src="images/japan-26803_640.png"] {
  }
 
  .text-center.h2 {
-    margin-top: 2rem !important;
-    margin-bottom: 1rem;
+    margin-top: 3rem !important;
  }
 
  .box-ders {
@@ -297,8 +298,8 @@ img[src="images/japan-26803_640.png"] {
     width: 80%;
  }
 
- .bottom-kurslar {
-    margin: 1rem 0.5rem;
+ .kurslar-bottom {
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -307,6 +308,7 @@ img[src="images/japan-26803_640.png"] {
  .icons-kurslar {
     display: flex;
     margin-bottom: 1rem;
+    margin-top: 1rem;
  }
 
  .icons-kurslar div {
@@ -378,37 +380,28 @@ img[src="images/japan-26803_640.png"] {
     padding: 4rem 0;
     width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
-    background-image: url(../images/Group4.png);
+    background-image: url(../images//Group4.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.main-comment {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 img[src="images/Ellipse 19.png"] {
-    display: none;
+    display: none !important;
 }
 
-#card-comment {
-    padding: 1rem;
-    width: 60%;
-    height: auto;
+.card-comment {
+    font-size: 1em;
+    padding: 0 1rem 1rem 1rem;
+    margin: 1rem;
+    height: auto !important;
     background: white;
     border-radius: 10px;
+}
+
+#top-comment-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#top-comment-box i {
-    display: flex;
-    flex-direction: column;
     font-size: 1.2rem;
     color: yellow;
 }
@@ -428,6 +421,26 @@ img[src="images/Ellipse 19.png"] {
     font-size: 2rem;
 }
 
-#card-comment div.text-center {
+.card-comment div.text-center {
     margin-top: 1rem;
+}
+
+.container2 {
+    max-width: 1000px;
+    margin: 0 auto;
+}a
+
+.bg-comment .slick-slide img:first-child {
+    display: none;
+}
+
+.card-comment div:last-child p {
+    font-size: 1em;
+}
+
+/* .bg-comment .slick-slider .slick-list, .slick-slider .slick-track {
+    padding: 0 !important;
+} */
+.bg-comment  .slick-track {
+    padding: 0 !important;
 }

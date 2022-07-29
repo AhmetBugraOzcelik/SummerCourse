@@ -6,6 +6,14 @@
     height: 281px;
 }
 
+@media (max-width : 320px) {
+    .container {
+        margin: auto;
+        padding: 0px 35px;
+        width: auto;
+    }
+}
+
 /* Navbar */
 
 nav {
@@ -39,6 +47,16 @@ a[href="#englitastic"] {
 #cap1 {
     font-size: 1.7rem;
     margin-right: 0.5rem;
+}
+
+@media (max-width :300px) {
+    .nav-left {
+        font-size: 0.8rem;
+    }
+    #cap1 {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
 }
 
 /* Center-Card styling */
@@ -111,32 +129,32 @@ a[href="#englitastic"] {
     }
     
     #cap1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-right: 0.5rem;
     }
 }
 
  /* Section-Kurslar */
 
- .box-kurs {
-    display: none;
- }
-
  #kurslar h3 {
     display: none;
 }
 
- #box-mobile {
+ /* #box-mobile {
     display: block;
     font-size: 0.8em;
     width: 60%;
     height: 250px;
     padding: 0 0.5rem;
- }
+ } */
 
  .kurslar-top div img {
     width: 100%;
     height: 90%;
+ }
+
+ .text-center.h2 {
+    display: none;
  }
 
  .kurslar-top {
@@ -158,6 +176,10 @@ a[href="#englitastic"] {
 
  #box-mobile .kurslar-bottom {
     height: 40%;
+ }
+
+ .box-ders {
+    margin: 0 2rem;
  }
 
  @media (max-width:432px) {
@@ -188,6 +210,12 @@ a[href="#englitastic"] {
      #box-mobile .kurslar-top {
         font-size: 1.2em;
      }
+ }
+
+ @media (max-width : 281px) {
+    /* .slick-track {
+        width: 1000px !important;
+    } */
  }
 
  /* Populer kurslar */
@@ -225,7 +253,7 @@ a[href="#englitastic"] {
     left: 6px;
  }
 
- @media (max-width :344px) {
+ @media (max-width :379px) {
     .icons-kurslar div {
         font-size: 0.5rem;
     }
@@ -246,6 +274,18 @@ a[href="#englitastic"] {
      }
  }
 
+ @media (max-width : 365px) {
+    .box-ders {
+        margin: 0 2rem;
+    }
+ }
+
+ @media (max-width : 320px) {
+    .box-ders {
+        margin: 0 3rem;
+    }
+ }
+
  /* Section-Kurslar */
 
  /* Section-Comment */
@@ -256,20 +296,20 @@ a[href="#englitastic"] {
 }
 
 img[src="images/Ellipse 12.png"] {
-    display: none;
+    display: none !important;
 }
 
 img[src="images/Ellipse 19.png"] {
-    display: block;
+    margin-top: 0.5rem;
+    display: block !important;
 }
 
 #card-comment div:first-child img {
     width: 100%;
 }
 
-#card-comment div:last-child p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+.card-comment div:last-child p {
+    padding-bottom: 1rem !important;
 }
 
 

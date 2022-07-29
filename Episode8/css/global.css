@@ -14,17 +14,16 @@
 .box-kurs:hover {
     -webkit-box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
 -moz-box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
-box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 15px rgba(0,0,0,0.75);
 }
 
-.slick-center {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: transform 0.5s;
-
-
+.draggable {
+    padding: 0 !important;
 }
+
+/* #box-kurs .draggable {
+    padding: 0 2rem !important;
+} */
 
 .slick-dots li.slick-active button:before
 {
@@ -32,17 +31,36 @@ box-shadow: -4px 14px 118px -17px rgba(0,0,0,0.75);
     color: red;
 }
 
+@media (min-width : 768px) {
+    .slick-center {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: transform 500ms;
+    }
+}
+
 .box-kurs {
-    width: 20%;
-    height: 220px;
+    margin: 1rem;
+    width: 200px;
+    height: 20% !important;
     background: white;
     border-radius: 15px;
+    transition: box-shadow 500ms;
 }
 
 .box-ders {
     margin: 1rem;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     width: 200px;
-    height: 500px;
-    background: white
+    height: 20% !important;
+    background: white;
+    /* margin: 0 10rem; */
+    z-index: 1;
+}
+
+@media (max-width : 495px) {
+    .box-ders {
+        margin: 0 5rem;
+    }
 }

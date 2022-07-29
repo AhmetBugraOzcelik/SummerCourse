@@ -7,6 +7,15 @@
 
 /* Navbar */
 
+    .container {
+        margin: auto;
+        padding: 0px 47px;
+        width: auto;
+    }
+/* .container {
+    max-width: 500px;
+} */
+
 nav {
     justify-content: center;
     padding-top: 1rem;
