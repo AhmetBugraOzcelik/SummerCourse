@@ -312,6 +312,115 @@ img[src="images/Ellipse 19.png"] {
     padding-bottom: 1rem !important;
 }
 
+/* Table Section */
+
+#middle-table-td {
+    border-collapse: collapse;
+    border: 2px solid #fff;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+}
+
+@media (max-width:462px) {
+        .bg-table {
+            height: 200px;
+        }
+}
+
+@media (max-width:380px) {
+    @media (max-width:605px) {
+        table, th ,td {
+            font-size: 0.9em;
+        }
+    
+        .bg-table {
+            height: 123px;
+        }
+    
+        td {
+            padding: 0.3rem 1.5rem;
+        }
+    }
+}
+
+@media (max-width:471px) {
+    #footer-top div:last-child {
+        font-size: 0.8em;
+    }
+
+    #footer-middle {
+        padding: 3rem 0;
+    }
+    
+    #footer-middle div {
+        width: 60px;
+        font-size: 0.4em;
+    }
+
+    #footer-bottom {
+        font-size: 0.5em;
+    }
+
+    #footer-middle div i {
+        font-size: 1rem;
+    }
+
+    td {
+        padding: 0.3rem 1.5rem;
+    }
+    #footer-top div:first-child i{
+        font-size: 0.7rem;
+    }
+
+        table, th ,td {
+            font-size: 0.8em;
+        }
+    
+        .bg-table {
+            height: 123px;
+        }
+    
+        td {
+            padding: 0.3rem 1rem;
+        }
+}
+
+/* Footer */
+
+@media (max-width : 457px) {
+    #logo-footer {
+        font-size: 0.5rem;
+    }
+    #footer-top div:last-child p:last-child {
+        margin-left: 0.3rem;
+    }
+    
+    #footer-top div:first-child i {
+        margin-right: 0.1rem;
+    }
+}
+
+@media (max-width : 320px) {
+    #logo-footer {
+        font-size: 0.3rem;
+    }
+    #footer-top div:last-child p:last-child {
+        margin-left: 0.2rem;
+    }
+    
+    #footer-top div:first-child i {
+        margin-right: 0.1rem;
+    }
+
+    #footer-top div:first-child i{
+        font-size: 0.5rem;
+    }
+    
+}
+
+
+
+
 
 
  
