@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    background: url(https://images.sigortapro.com/Images/20210326/sl3.svg)
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.top-header {
+    background: #431E74;
+    width: 100%;
+}
+
+.header-content {
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-content div {
+    font-size: 0.8em;
+}
+
+.header-content div a {
+    display: block;
+    padding: 0.8rem;
+}
+
+.header-content div:last-child{
+    font-size: 0.9em;
+    background: #8F72B7;
+    margin-left: 0.5rem;
+}
+
+.header-content div:last-child a {
+    opacity: 0.6;
+}
+
+/* Nav */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div:last-child {
+    display: flex;
+}
+
+nav div:last-child div a {
+    display: block;
+    padding: 1rem;
+}
