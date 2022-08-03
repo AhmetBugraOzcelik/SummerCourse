@@ -63,6 +63,25 @@ nav {
     align-items: center;
 }
 
+#nav-items div a:not(#nav-items div:last-child a):after {
+    content: '';
+    display: block;
+    width: 100%;
+    opacity: 0;
+    height: 3px;
+    background: blue;
+    transition: opacity .2s;
+}
+
+#nav-items div a:not(#nav-items div:last-child a):hover::after {
+    opacity: 1;
+}
+
+#burger-menu {
+    font-size: 2.5rem;
+    display: none;
+}
+
 /* Section-Upper */
 
 #section-upper {
@@ -71,11 +90,8 @@ nav {
 
 .top-section-upper {
     display: flex;
+    align-items: center;
     color: #15324B;
-}
-
-.top-section-upper > div:first-child {
-    padding: 3.8rem 1rem 0 1rem;
 }
 
 .top-section-upper > div:first-child > div:first-child {
@@ -105,23 +121,41 @@ nav {
 .bottom-section-upper > div {
     height: 120px;
     background: #fff;
+    padding-bottom: 1.5rem;
+}
+
+form > div > div {
+    display: flex;
+}
+
+#mobile-picture {
+    display: none;
+}
+
+form {
+    height: 100%;
 }
 
 form > div {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    height: 100%;
 }
 
-form > div div {
+form > div > div div:not(form > div > div > div:first-child) {
     margin-left: 1rem;
 }
 
-form div div:first-child {
+form > div > div > div div{
+    margin: 0;
+}
+
+form div div div:first-child {
     position: relative;
 }
 
-form > div > div:first-child > div:last-child > div:last-child {
+form > div >  div > div:first-child > div:last-child > div:last-child {
     color: #fff;
     background: #2691FB;
     border-radius: 8px;
@@ -132,13 +166,14 @@ form > div > div:first-child > div:last-child > div:last-child {
     align-items: center;
     justify-content: center;
     left: 10px; 
-    top: 27px; 
+    top: 35px; 
     width: 35px;
     height: 30px;
 }
 
-form div > div > div:first-child {
+form div > div > div > div:first-child:not(#bottom-section-upper-button) {
     font-size: 0.8em;
+    margin-bottom: 0.5rem;
 }
 
 #input-plaka {
@@ -146,6 +181,7 @@ form div > div > div:first-child {
 }
 
 #bottom-section-upper-button {
+    margin-left: 2rem;
     background: linear-gradient(90deg, rgba(228,65,35,1) 0%, rgba(242,145,15,1) 100%);
     height: 50px;
     border-radius: 10px;
@@ -156,5 +192,130 @@ form div > div > div:first-child {
     font-size: 1.8rem;
     color: #fff;
     padding: 1.5rem;
+    cursor: pointer;
 }
 
+
+
+@media (max-width : 992px) {
+    #burger-menu {
+        display: block;
+        position: absolute;
+        left: 10px;
+    }
+
+    #mobile-picture {
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #mobile-picture img {
+        width: 85%;
+    }
+
+    .top-section-upper {
+        padding: 0 3rem;
+    }
+
+    .top-section-upper > div:last-child {
+        display: none;
+    }
+
+    #nav-items {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-section-upper > div {
+        background: #DFEBF3;
+    }
+
+    form > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    form > div > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .bottom-section-upper {
+        padding: 5rem 3rem;
+    }
+
+    form > div > div div:not(form > div > div:first-child) {
+        width: 100%;
+    }
+
+    #bottom-section-upper-button {
+        margin-top: 1rem;
+        width: 20%;
+    }
+
+    form > div > div div:not(form > div > div > div:first-child) {
+        margin-left: 0rem;
+    }
+    
+}
+
+@media (max-width : 500px) {
+    .logo img {
+        width: 8rem;
+    }
+
+    #input-plaka::placeholder {
+        font-size: 0.8em;
+    }
+
+    #input-plaka {
+        padding-left: 3.2rem;
+    }
+
+    .top-section-upper > div > div > div h1 {
+        font-size: 1em;
+    }
+
+    .top-section-upper > div > div > div h3 {
+        font-size: 1em;
+    }
+
+    #bottom-section-upper-button {
+        width: 40%;
+    }
+
+    .bottom-section-upper {
+        padding: 5rem 1.5rem;
+    }
+
+    .top-section-upper {
+        padding: 0 1.5rem;
+    }
+
+}
+
+@media (max-width : 318px) {
+    #input-plaka::placeholder {
+        font-size: 0.6em;
+    }
+
+    form div p {
+        font-size: 0.8em;
+    }
+
+    form > div >  div > div:first-child > div:last-child > div:last-child {
+        top: 32px;
+    }
+
+}
