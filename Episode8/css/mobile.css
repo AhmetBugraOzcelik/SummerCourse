@@ -34,6 +34,7 @@ nav ul {
     width: 1.5rem;
     height: 1.5rem;
     background: #FFC300;
+    cursor: pointer;
 }
 
 #nav-menu-bar i {
