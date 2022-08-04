@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
 }
 
 a {
@@ -119,12 +120,13 @@ nav {
 }
 
 .bottom-section-upper > div {
+    border-radius: 15px;
     height: 120px;
     background: #fff;
     padding-bottom: 1.5rem;
 }
 
-form > div > div {
+form > div {
     display: flex;
 }
 
@@ -139,23 +141,19 @@ form {
 form > div {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100%;
 }
 
-form > div > div div:not(form > div > div > div:first-child) {
-    margin-left: 1rem;
-}
-
-form > div > div > div div{
+form > div > div div{
     margin: 0;
 }
 
-form div div div:first-child {
+form div div:first-child {
     position: relative;
 }
 
-form > div >  div > div:first-child > div:last-child > div:last-child {
+form >  div > div:first-child > div:last-child > div:last-child {
     color: #fff;
     background: #2691FB;
     border-radius: 8px;
@@ -171,7 +169,7 @@ form > div >  div > div:first-child > div:last-child > div:last-child {
     height: 30px;
 }
 
-form div > div > div > div:first-child:not(#bottom-section-upper-button) {
+form > div > div > div:first-child:not(#bottom-section-upper-button) {
     font-size: 0.8em;
     margin-bottom: 0.5rem;
 }
@@ -181,7 +179,6 @@ form div > div > div > div:first-child:not(#bottom-section-upper-button) {
 }
 
 #bottom-section-upper-button {
-    margin-left: 2rem;
     background: linear-gradient(90deg, rgba(228,65,35,1) 0%, rgba(242,145,15,1) 100%);
     height: 50px;
     border-radius: 10px;
@@ -191,13 +188,184 @@ form div > div > div > div:first-child:not(#bottom-section-upper-button) {
     align-items: center;
     font-size: 1.8rem;
     color: #fff;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     cursor: pointer;
 }
 
+/* Section-Konut*/
+
+.bg-konut {
+    background: #fff
+}
+
+.bg-konut .container > div {
+    width: 100%;
+    height: auto;
+    padding: 6rem 0;
+}
+
+.bg-konut .container > div > div div {
+    font-size: 1.5em;
+    color: #15324B;
+}
+
+.bg-konut .container > div > div div:last-child h2 {
+    font-weight: normal;
+}
+
+.bg-konut .container > div > div:last-child {
+    margin-top: 4rem;
+    font-size: 0.8em;
+    line-height: 2em;
+    opacity: 0.8;
+}
+
+/* Section Paket */
+
+.bg-paket {
+    background: url(../images/Group\ 6203.png)
+}
+
+.bg-paket > div {
+    padding: 5rem 0;
+}
+
+#baslik-paket {
+    margin-bottom: 2rem;
+} 
+
+.bg-paket .container > div > div > div:first-child > div:first-child h2 {
+    color: #15324B;
+}
+
+.bg-paket .container > div > div:first-child > div:first-child {
+    font-size: 1.5em;
+}
+
+.bg-paket .container > div > div > div:first-child > div:last-child h2 {
+    font-weight: normal;
+}
+
+.bg-paket .container p {
+    font-size: 0.8em;
+    line-height: 2em;
+    opacity: 0.8;
+}
+
+.bg-paket .container > div > div:last-child {
+    flex-wrap: nowrap;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-paket .container > div > div:last-child > div:first-child {
+    flex-wrap: nowrap;
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bg-paket .container > div > div:last-child > div:last-child {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bg-paket .container > div > div:last-child > div:last-child p {
+    padding-left: 0.5rem;
+}
+
+#text-flex-icon div div {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+#text-flex-icon div div div {
+    min-width: 5px;
+    min-height: 46px;
+    max-width: 5px;
+    max-height: 46px;
+    background: #159BF5;
+    margin-left: 0.5rem;
+    box-shadow: 0 5px 20px #159BF5;
+}
+
+#text-flex-icon div:last-child div div {
+    min-width: 5px;
+    min-height: 46px;
+    max-width: 5px;
+    max-height: 46px;
+    background: #F2910F;
+    box-shadow: 0 5px 20px #F2910F;
+}
+
+/* Section-Teminat */
+
+.bg-teminat {
+    background: #FFFFFF;
+}
+
+.bg-teminat .container > div {
+    padding: 5rem 0rem;
+}
+
+.bg-teminat .container div.text-center {
+    margin-bottom: 4rem;
+}
+
+.bg-teminat .container div div:first-child div{
+    font-size: 1.5em;
+}
+
+.bg-teminat .container div div:first-child div:first-child{
+    color: #15324B;
+}
+
+.bg-teminat .container div div:first-child div:last-child h2{
+    font-weight: normal;
+}
+
+.icons-teminat {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.icons-teminat div {
+    flex: 25%;
+    max-width: 25%;
+    display: flex;
+    margin: 35px 0;
+    align-items: center;
+    flex-flow: nowrap;
+}
+
+.icons-teminat div i {
+    font-size: 33px;
+    color: #159bf5;
+    text-align: center;
+    min-width: 60px;
+}
+
+.icons-teminat div p {
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+}
 
 
 @media (max-width : 992px) {
+
+    form {
+        height: auto;
+    }
+
+    .bottom-section-upper > div {
+        height: auto;
+    }
+
     #burger-menu {
         display: block;
         position: absolute;
@@ -244,7 +412,7 @@ form div > div > div > div:first-child:not(#bottom-section-upper-button) {
         height: 100%;
     }
 
-    form > div > div {
+    form > div {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -255,28 +423,66 @@ form div > div > div > div:first-child:not(#bottom-section-upper-button) {
         padding: 5rem 3rem;
     }
 
-    form > div > div div:not(form > div > div:first-child) {
+    form > div div:not(form > div > div:first-child) {
         width: 100%;
     }
 
     #bottom-section-upper-button {
         margin-top: 1rem;
-        width: 20%;
+        width: 100%;
     }
 
-    form > div > div div:not(form > div > div > div:first-child) {
+    form > div div:not(form > div > div > div:first-child) {
         margin-left: 0rem;
+        width: 100%;
     }
+
+    /* Section-Konut */
+
+    .bg-konut .container > div {
+        padding: 5rem 3rem;
+    }
+
+    /* Section Paket */
+
+    .bg-paket .container > div > div:last-child {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text-flex-icon div div div {
+        min-width: 5px;
+        min-height: 46px;
+        max-width: 5px;
+        max-height: 46px;
+    }
+    
+    #text-flex-icon div:last-child > div > div {
+        min-width: 5px;
+        min-height: 46px;
+        max-width: 5px;
+        max-height: 46px;
+    }
+
+    .bg-paket > div {
+        padding: 5rem 3rem;
+    }
+
+    #text-flex-icon > div > div {
+        margin-top: 1rem;
+        justify-content: center;
+
+    }
+
     
 }
 
 @media (max-width : 500px) {
     .logo img {
         width: 8rem;
-    }
-
-    #input-plaka::placeholder {
-        font-size: 0.8em;
     }
 
     #input-plaka {
@@ -303,19 +509,39 @@ form div > div > div > div:first-child:not(#bottom-section-upper-button) {
         padding: 0 1.5rem;
     }
 
-}
+    .bg-konut .container > div {
+        padding: 4rem 1.5rem;
+    }
 
-@media (max-width : 318px) {
-    #input-plaka::placeholder {
+    /* Section-Paket*/
+
+    .bg-paket > div {
+        padding: 5rem 1.5rem;
+    }
+
+    .bg-paket .container p {
         font-size: 0.6em;
     }
 
+    .bg-paket .container > div > div > div:first-child > div:last-child h2 {
+        font-size: 0.8em;
+    }
+
+
+}
+
+@media (max-width : 318px) {
+    
     form div p {
         font-size: 0.8em;
     }
 
-    form > div >  div > div:first-child > div:last-child > div:last-child {
-        top: 32px;
+    form >  div > div:first-child > div:last-child > div:last-child {
+        top: 32px !important;
+    }
+
+    .img-paket img {
+        width: 90%;
     }
 
 }

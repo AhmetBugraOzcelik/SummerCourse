@@ -14,3 +14,9 @@
     opacity: 0.5;
     font-weight: bold;
 }
+
+/* Text */
+
+.text-center {
+    text-align: center;
+}
