@@ -3,7 +3,7 @@ $('.boxs').slick({
     arrows: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
     centerMode: true,
     variableWidth: true,
   responsive: [

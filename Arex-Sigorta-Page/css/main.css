@@ -37,6 +37,7 @@ nav {
 }
 
 #nav-items {
+    z-index: 9999;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -79,9 +80,37 @@ nav {
     opacity: 1;
 }
 
-#burger-menu {
-    font-size: 2.5rem;
+.burger-menu {
     display: none;
+}
+
+.btn-burger {
+    width: 50px;
+    height: 6px;
+    background: gray;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(244, 244, 244, .2);
+    transition: all .5s ease-in-out;
+}
+
+.btn-burger::before,
+.btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: gray;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px argba(244, 244, 244, .2);
+    transition: all .5s ease-in-out;
+}
+
+.btn-burger::before {
+    transform: translateY(-16px);
+}
+
+.btn-burger::after {
+    transform: translateY(16px);
 }
 
 /* Section-Upper */
@@ -155,6 +184,10 @@ form div div:first-child {
     position: relative;
 }
 
+#input-div {
+    position: relative;
+}
+
 form >  div > div:first-child > div:last-child > div:last-child {
     color: #fff;
     background: #2691FB;
@@ -165,10 +198,13 @@ form >  div > div:first-child > div:last-child > div:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 10px; 
-    top: 35px; 
+    left: 10px;
+    /* top: 35px; */
     width: 35px;
     height: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 form > div > div > div:first-child:not(#bottom-section-upper-button) {
@@ -267,6 +303,7 @@ form > div > div > div:first-child:not(#bottom-section-upper-button) {
     text-align: right;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
 .bg-paket .container > div > div:last-child > div:last-child {
@@ -340,7 +377,7 @@ form > div > div > div:first-child:not(#bottom-section-upper-button) {
     flex: 22%;
     max-width: 22%;
     display: flex;
-    margin: 3rem 1rem;
+    margin: 3rem 1.03rem;
     align-items: center;
     flex-flow: nowrap;
 }
@@ -370,7 +407,8 @@ form > div > div > div:first-child:not(#bottom-section-upper-button) {
     margin-top: 2rem;
 }
 
-#buttons-teminat div:last-child a {
+#buttons-teminat div a:hover {
+    transition: background 0.5s;
     background: #AEB0B1;
 }
 
@@ -471,14 +509,18 @@ form > div > div > div:first-child:not(#bottom-section-upper-button) {
     font-weight: normal;
 }
 
-ul li::before {
+.bg-sartlar ul li::before {
   content: "\2022";
   color: #EB7D11;
   font-weight: bold;
   display: inline-block; 
   width: 1em;
   font-size: 2rem;
-  margin-left: -1em;
+  margin-left: -0.2em;
+}
+
+ul li:last-child::before {
+    font-size: 0;
 }
 
 .bg-sartlar .container > div > div:last-child {
@@ -494,7 +536,7 @@ ul li::before {
     flex: 30%;
     max-width: 30%;
     display: flex;
-    margin: 1rem 1rem;
+    margin:0.3rem 1rem;
     align-items: center;
     flex-flow: nowrap;
 }
@@ -509,6 +551,408 @@ ul li::before {
     }
 }
 
+/* Section-Sorular */
+
+.bg-sorular {
+    background: #DFEBF3;
+}
+
+.bg-sorular .container > div {
+    display: flex;
+    padding: 5rem 0;
+    justify-content: space-between;
+}
+
+.bg-sorular .container > div > div:last-child {
+    width: 45%;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bg-sorular .container > div > div:first-child {
+    width: 45%;
+}
+
+.bg-sorular .container > div > div:first-child > div:first-child {
+    color: #15324B;
+}
+
+.bg-sorular .container > div > div:first-child > div:first-child {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+.bg-sorular .container > div div:first-child div:last-child h2 {
+    font-weight: normal;
+}
+
+#icons-sorular div {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+#icons-sorular div div:first-child {
+    background: #FFFFFF;
+    width: 63px;
+    height: 63px;
+    box-shadow: rgba(31, 124, 153, 0.25) 0px 5px 15px;
+
+    border-radius: 10px;
+}
+
+#icons-sorular div div:first-child a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#icons-sorular div:first-child div:first-child a i {
+    color: #159BF5;
+}
+
+#icons-sorular div:last-child div:first-child a i {
+    color: #F2910F;
+}
+
+.bg-sorular .container > div div:last-child div div:first-child{
+    font-size: 2rem;
+}
+
+details > div > div:first-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+details summary {
+    opacity: 0.6;
+}
+
+.details-h5 {
+    width: 80%;
+}
+
+details div div:last-child p {
+    margin-top: 1rem;
+    font-size: 0.8em;
+    line-height: 2em;
+    opacity: 0.8;
+}
+
+.bg-sorular .container > div div:last-child div {
+    display: flex;
+    align-items: center;
+}
+
+details > div div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+details div div:first-child div h5 {
+    font-size: 0.5em;
+}
+
+details div div:first-child div {
+    font-size: 0.5em;
+}
+
+details div div:first-child h5 {
+    color: #159BF5;
+}
+
+details > div {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* Section-Haberler */
+
+.container-haberler {
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-haberler {
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container-haberler > div {
+    padding: 5rem 0;
+}
+
+.container-haberler > div > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #15324B;
+    font-size: 1.5em;
+}
+
+.container-haberler > div > div:first-child h3 {
+    font-weight: bold;
+}
+
+.box {
+    height: auto !important;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex !important;
+    align-items: center;
+}
+
+.draggable {
+    padding: 1rem;
+}
+
+.box div:first-child img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.box > div:first-child {
+    width: 35%;
+    position: relative;
+}
+
+.box > div:first-child > div:last-child {
+    position: absolute;
+    border-radius: 5px;
+    top: -12px;
+    left: 10px;
+    padding: 0.4rem;
+    width: 60px;
+    background: #159BF5;
+    color: #fff;
+}
+
+.box > div:last-child {
+    width: 62%;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box > div:last-child > div:last-child {
+    margin-top: 0.2rem;
+    color: #159BF5;
+    display: flex;
+    align-items: center;
+}
+
+.box > div:last-child div:last-child div:last-child {
+    margin-left: 0.5rem;
+}
+
+.slick-dots li button:before {
+    border: 2px solid gray;
+    border-radius: 100%;
+    color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: gray !important;
+    background: gray;
+}
+
+/* Footer */
+
+.bg-footer {
+    background: #F2F7FA;
+}
+
+.bg-footer .container > div {
+    padding: 3rem 0;
+}
+
+.bg-footer .container > div > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-footer .container > div > div:first-child > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-footer .container > div > div:first-child > div {
+    max-width: 100%;
+    width: 55%;
+}
+
+.footer-left > div > div:first-child > div > div:last-child {
+    margin-right: 3rem;
+}
+
+.text-footer-baslik {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#boxs-footer {
+    max-width: 45%;
+}
+
+#box-footer > div {
+    width: 100%;
+}
+
+.box-footer > div:first-child {
+    width: 30%;
+    margin-right: 1rem;
+}
+
+.box-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-footer > div:last-child {
+    width: 65%;
+}
+
+.box-footer > div:first-child img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.footer-left {
+    font-size: 1em !important;
+}
+
+.box-footer > div:last-child > div:first-child {
+    font-weight: bold;
+}
+
+#icons-footer {
+    width: 100%;
+    display: flex;
+    padding: 1rem 0;
+}
+
+#icons-footer div {
+    margin-right: 2rem;
+    width: 39px;
+    height: 39px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(60, 60, 60, 0.5);
+}
+
+#icons-footer div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.footer-kasko-box {
+    width: 100%;
+    background: #09317C;
+    padding: 2rem 4rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-kasko-box > div:first-child {
+    color: #fff;
+    width: 50%;
+}
+
+.footer-kasko-box > div:first-child h4 span {
+    color: #159BF5;
+}
+
+.footer-kasko-box > div:first-child > div:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.footer-kasko-box > div:last-child {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-kasko-box > div:last-child div {
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(228,65,35,1) 0%, rgba(242,145,15,1) 100%);
+    width: 50%;
+    height: 66px;
+}
+
+.footer-kasko-box > div:last-child div a {
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;  
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-last {
+    background: #09317C;
+    height: 50px;
+}
+
+.bg-last .container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: #fff;
+}
+
+.bg-last .container > div div p {
+    font-size: 0.8em;
+}
+
+.bg-last .container > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.footer-left div.text-style {
+    line-height: 3em;
+}
+
+
+.bg-footer .container > div > div:first-child > div > div:last-child {
+    margin-right: 3rem
+}
+
+@media (max-width : 1200px) {
+    .box > div:last-child > div:last-child {
+        font-size: 0.8em;
+    }
+
+    .bg-footer .container > div > div:first-child > div > div {
+        /* margin-right: 1.2rem; */
+    }
+}
 
 @media (max-width : 992px) {
 
@@ -516,19 +960,95 @@ ul li::before {
         height: auto;
     }
 
+    header {
+        height: 50px;
+        width: 100%;
+    }
+
+    header > div {
+        background: #DFEBF3;
+        opacity: 1;
+        width: 100%;
+        z-index: 9999;
+        position: fixed;
+    }
+/* 
     .container {
-        max-width: 700px;
+        max-width: 900px;
         margin: 0 auto;
+    } */
+
+    #nav-items {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 0;
+        flex-direction: column;
+        background: #DFEBF3;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    #nav-items div:last-child {
+        width: 50%;
+    }
+
+    #nav-items div {
+        width: 100%;
+        padding: 1rem 0;
+        margin: 0;
+        border-bottom: 1px solid gray;
+    }
+
+    #nav-items div:last-child a {
+        justify-content: center;
+    }
+
+    #nav-items div:last-child {
+        height: auto;
+    }
+
+    #nav-items div:last-child {
+        border-bottom: 0;
+        margin: 1rem 0;
+    }
+
+    #nav-items.active {
+        left: 0;
+        height: 100%;
     }
 
     .bottom-section-upper > div {
         height: auto;
     }
 
-    #burger-menu {
+    .burger-menu {
         display: block;
         position: absolute;
         left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .burger-menu.open .btn-burger {
+        transform: translate(-50px);
+        background: transparent;
+        box-shadow: none;
+
+    }
+
+    .burger-menu.open .btn-burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .burger-menu.open .btn-burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
     }
 
     #mobile-picture {
@@ -547,10 +1067,6 @@ ul li::before {
     }
 
     .top-section-upper > div:last-child {
-        display: none;
-    }
-
-    #nav-items {
         display: none;
     }
 
@@ -579,7 +1095,7 @@ ul li::before {
     }
 
     .bottom-section-upper {
-        padding: 5rem 3rem;
+        padding: 2rem 3rem;
     }
 
     form > div div:not(form > div > div:first-child) {
@@ -594,6 +1110,7 @@ ul li::before {
     form > div div:not(form > div > div > div:first-child) {
         margin-left: 0rem;
         width: 100%;
+        margin-bottom: 0.2rem;
     }
 
     /* Section-Konut */
@@ -605,11 +1122,20 @@ ul li::before {
     /* Section Paket */
 
     .bg-paket .container > div > div:last-child {
-        margin-top: 4rem;
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #text-flex-icon div:first-child div {
+        text-align: left;
+    }
+
+    #text-flex-icon div:first-child div div:last-child {
+        order: -1;
+        margin-right: 12px;
     }
 
     #text-flex-icon div div div {
@@ -628,6 +1154,10 @@ ul li::before {
 
     .bg-paket > div {
         padding: 5rem 3rem;
+    }
+
+    #paket-img {
+        display: none;
     }
 
     #text-flex-icon > div > div {
@@ -681,7 +1211,7 @@ ul li::before {
     /* Section-Sartlar */
 
     .bg-sartlar .container > div > div:last-child li {
-        flex: 50%;
+        flex: 40%;
         max-width: 50%;
         display: flex;
         margin: 1rem 1.2rem;
@@ -697,9 +1227,133 @@ ul li::before {
         justify-content: center;
     }
 
+    /* Section-Sorular*/
+
+    .bg-sorular .container > div {
+        padding: 5rem 3rem;
+    }
+
+    .bg-sorular .container > div {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bg-sorular .container > div > div:first-child {
+        width: 100%;
+    }
+
+    .bg-sorular .container > div > div:last-child {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* Section-Haberler */
+
+    .box > div:last-child > div:last-child {
+        font-size: 0.7em;
+    }
+
+    .box > div:last-child {
+        font-size: 1.4em;
+    }
+
+    /* Footer */
+
+    .bg-footer .container > div {
+        padding: 2rem 3rem;
+    }
+
+    .bg-footer .container > div > div:first-child {
+        justify-content: center;
+    }
+
+    .bg-footer .container > div > div:first-child > div {
+        justify-content: space-between;
+        width: 100%;
+        font-size: 0.8em;
+        flex-direction: column;
+    }
+
+    .bg-footer .container > div > div:first-child > div > div {
+        margin: 0;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    #icons-footer {
+        justify-content: space-between;
+        height: 90px;
+        align-items: center;
+    }
+
+    #icons-footer div {
+        margin-right: 0;
+    }
+
+    .box-footer {
+        justify-content: center;
+        width: 60%;
+    }
+
+    @media (max-width : 630px) {
+        .box-footer {
+            justify-content: center;
+            width: 80%;
+        }
+    }
+
+    .bg-footer .container > div > div:first-child > div > div:last-child {
+        margin: 0;
+    }
+
+    #boxs-footer {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .footer-kasko-box {
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-kasko-box > div:first-child {
+        width: 100%;
+    }
+
+    .footer-kasko-box > div:first-child > div:first-child {
+        display: flex;
+    }
+
+    .footer-kasko-box > div:first-child h4 span {
+        margin-left: 0.3rem;
+    }
+
+    .footer-kasko-box > div:last-child {
+        display: block;
+    }
+
+    .footer-kasko-box > div:last-child div a {
+        font-size: 0.8em;
+    }
+
+    .footer-kasko-box > div:last-child div {
+        margin-top: 1rem;
+        width: 90%;
+    }
+
+    .footer-kasko-box > div:first-child > div:first-child {
+        justify-content: flex-start;
+    }
+
 }
 
 @media (max-width : 500px) {
+
+    header {
+        height: 60px;
+    }
+    
     .logo img {
         width: 8rem;
     }
@@ -721,7 +1375,11 @@ ul li::before {
     }
 
     .bottom-section-upper {
-        padding: 5rem 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    #section-upper {
+        padding: 1rem 0;
     }
 
     .top-section-upper {
@@ -798,17 +1456,246 @@ ul li::before {
         padding: 1rem;
     }
 
-    .bg-sartlar .container > div > div:last-child li {
-        font-size: 0.8em;
+    .bg-sartlar .container > div > div:last-child {
+        margin-top: 1rem;
     }
 
     .bg-sartlar .container > div > div:last-child li {
-        flex: 35%;
-        max-width: 35%;
+        font-size: 0.6em;
+    }
+
+    .bg-sartlar .container > div > div:last-child li {
+        flex: 100%;
         display: flex;
         margin: 1rem 1.2rem;
         align-items: center;
         flex-flow: nowrap;
+    }
+
+    .bg-sartlar ul li::before {
+        width: 0.5em;
+        margin-right: 1rem
+    }
+
+    .bg-sartlar .container > div > div:last-child ul li div {
+        text-align: left;
+    }
+
+    /* Section-Sorular */
+
+    .bg-sorular .container > div > div:first-child > div:first-child {
+        font-size: 1em;
+    }
+
+    #icons-sorular div p {
+        font-size: 0.8em;
+    }
+
+    #icons-sorular div div:first-child {
+        width: 43px;
+        height: 43px;
+    }
+
+    #icons-sorular div div:first-child a {
+        font-size: 1rem;
+    }
+
+    .bg-sorular .container > div {
+        padding: 5rem 1.5rem;
+    }
+
+    /* Section-Haberler */
+
+    .box > div:last-child {
+        font-size: 0.8em;
+    }
+
+    .box > div:first-child > div:last-child {
+        position: absolute;
+        border-radius: 5px;
+        top: -12px;
+        left: 10px;
+        padding: 0.2rem;
+        width: 36px;
+        background: #159BF5;
+        color: #fff;
+        font-size: 0.7em;
+    }
+
+    .container-haberler > div > div:first-child h3 {
+        text-align: center;
+    }
+
+    /* Footer */
+
+    .bg-footer .container > div > div:first-child > div > div:last-child {
+        margin-right: 0rem;
+    }
+
+    .footer-kasko-box {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-kasko-box > div:last-child {
+        width: 100%;
+    }
+
+    .bg-footer .container > div {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-kasko-box > div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-kasko-box > div:last-child div {
+        width: 100%;
+    }
+
+    .bg-footer .container > div > div:first-child > div > div {
+        margin-bottom: 0.5rem;
+    }
+    
+    .bg-footer .container > div > div:first-child > div {
+        flex-direction: column;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .footer-left div.text-style {
+        display: flex;
+    }
+
+    .footer-left div.text-style div {
+        display: flex;
+        align-items: center;
+        line-height: 1rem !important;
+    }
+
+    .footer-left div.text-style div {
+        flex: 50%;
+        max-width: 50%;
+        padding: 1rem 0;
+    }
+
+    .box-footer {
+        flex-direction: row;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .box-footer > div:last-child {
+        margin-left: 0.5rem;
+        width: 65%;
+    }
+
+    .box-footer > div:first-child {
+        margin: 0rem;
+    }
+
+    .bg-last .container > div img {
+        width: 70%;
+    }
+
+    .bg-last .container > div > div:last-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bg-last .container > div > div:first-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bg-last .container > div {
+        font-size: 0.8em;
+    }
+
+    .footer-kasko-box > div:first-child > div:first-child {
+        justify-content: center;
+    }
+
+    
+
+    
+
+
+    @media (max-width : 397px) {
+        .box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box > div:first-child {
+            width: 50%;
+            margin-bottom: 0.5rem;
+        }
+
+        .box > div:last-child {
+            width: 100%;
+        }
+
+        /* Footer */
+
+        .bg-last .container > div {
+            height: 50px;
+        }
+
+        .bg-last .container > div > div:last-child {
+            align-items: center;
+            width: 20%;
+        }
+    
+        .bg-last .container > div > div:first-child {
+            align-items: center;
+            width: 20%;
+        }
+
+        .box-footer > div:last-child {
+            font-size: 0.7em;
+            margin-left: 0.1rem;
+        }
+
+        .bg-last .container > div {
+            font-size: 0.7em;
+        }
+
+        /* .footer-left div.text-style div {
+            line-height: 1em;
+        } */
+
+        .burger-menu {
+            left: 0;
+        }
+
+        .btn-burger {
+            width: 30px;
+            height: 6px;
+            background: gray;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(244, 244, 244, .2);
+            transition: all .5s ease-in-out;
+        }
+        
+        .btn-burger::before,
+        .btn-burger::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 6px;
+            background: gray;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px argba(244, 244, 244, .2);
+            transition: all .5s ease-in-out;
+        }
+
     }
 
 
@@ -818,10 +1705,6 @@ ul li::before {
     
     form div p {
         font-size: 0.8em;
-    }
-
-    form >  div > div:first-child > div:last-child > div:last-child {
-        top: 32px !important;
     }
 
     .img-paket img {
@@ -836,6 +1719,31 @@ ul li::before {
 
     .bg-teminat .container > div {
         padding: 5rem 1rem;
+    }
+
+    /* Section-sartlar */
+/* 
+    .bg-sartlar .container > div > div:last-child li {
+        max-width: 30%;
+        font-size: 0.5em;
+    } */
+
+    .bg-sartlar .container > div > div:last-child ul {padding: 0;}
+
+    /* Section-Sorular */
+
+    .bg-sorular .container > div {
+        text-align: center;
+    }
+
+    /* Footer */
+
+    #icons-footer div {
+        margin-right: 0.2rem;
+    }
+
+    .bg-last .container > div {
+        font-size: 0.6em;
     }
 
 }

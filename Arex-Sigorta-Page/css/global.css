@@ -15,6 +15,12 @@
     font-weight: bold;
 }
 
+  details > summary {
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
 /* Text */
 
 .text-center {
