@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin-top: 2rem;
+            width: 100%;
+            text-align: center;
+            border: 3px solid red;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 1rem 1.5rem;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" id="form1">
+        <p>Ürün Adı :</p>
+        <input maxlength="20" type="text" name="urunadi" id="urunadi">
+        <p>Ürün Kodu :</p>
+        <input type="text" name="urunkodu" id="urunkodu">
+        <p>Fiyatı :</p>
+        <input type="text" name="fiyat" id="fiyat">
+        <p>Katagorisi :</p>
+        <input type="text" name="katagori" id="katagori">
+        <br>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+    <table>
+        <tbody id="urunler"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: red;
+    padding: 1rem;
+    height: 10%;
+    text-align: center;
+}
+
+#boxs {
+    position: relative;
+    height: 80%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boxs > div {
+    width: 20%;
+    height: 50%;
+    background: red;
+    margin-right: 3rem;
+}
+
+#boxs div:last-child {
+    margin-right: 0;
+}
+
+#footer {
+    padding: 1rem;
+    background: red;
+    height: 10%;
+}
+
+.main {
+    height: 100vh;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+    background: url("https://sariyer.meb.gov.tr/meb_iys_dosyalar/2022_03/19215254_WhatsApp_Image_2022-03-19_at_14.35.14.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: cyan !important;
+    visibility: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.middle {
+    transition: all 1s ease;
+    width: 500px;
+    height: 400px;
+}
+
+.middle:hover {
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    transition: all 1s ease;
+}
+
+.middle:hover .visible {
+    transition: all 1s ease;
+    display: none;
+    
+}
+.middle .visible {
+    transition: all 1s ease;
+    display: block;
+}
+.middle .content{
+    transition: all .5s ease;
+}
+.middle:hover .content {
+    visibility: visible;
+    transition: all 1s ease;
+}
+
+.middle.active {
+    margin-right: 0 !important;
+}
+
+#boxs.active {
+    height: 90% !important;
+}
+
+#footer-hide {
+    width: 100%;
+    height: 10%;
+    background: red;
+}
+
+

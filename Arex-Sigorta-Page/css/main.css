@@ -17,6 +17,13 @@ a {
     margin: 0 auto;
 }
 
+/* EDİT */
+
+summary i {
+    color: gray;
+    margin-left: 0.5rem;
+}
+
 /* Header-Nav */
 
 .bg {
@@ -744,9 +751,12 @@ details > div {
 
 .box > div:last-child > div:last-child {
     margin-top: 0.2rem;
-    color: #159BF5;
     display: flex;
     align-items: center;
+}
+
+.box > div:last-child > div:last-child a {
+    color: #159BF5;
 }
 
 .box > div:last-child div:last-child div:last-child {

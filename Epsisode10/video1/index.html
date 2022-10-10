@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video1</title>
+</head>
+<body>
+    <form oninput = "calculate.value=parseInt(range1.value)+parseInt(number1.value)">
+        <input type="range" name="range1" id="range1" value="50">
+        <input type="number" name="number1" id="number1" value="50">
+        <output name="calculate" id="calculate" for="range1 number1"></output>
+
+        <input type="text" list="dil">
+        <datalist id="dil">
+            <option value="Java"></option>
+            <option value="JavaScript"></option>
+            <option value="C#"></option>
+            <option value="C++"></option>
+            <option value="C"></option>
+        </datalist>
+    </form>
+</body>
+</html>

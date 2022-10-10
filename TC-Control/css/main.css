@@ -1,0 +1,39 @@
+
+.input-text {
+    border-radius: 15px;
+    padding: 1rem;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+#btn {
+    font-weight: bold;
+    padding: 1rem;
+    background: gray;
+    border: 0;
+    border-radius: 15px;
+    border: 2px solid black;
+    -webkit-box-shadow: 10px 10px 39px 0px rgba(74,74,74,1);
+-moz-box-shadow: 10px 10px 39px 0px rgba(74,74,74,1);
+box-shadow: 10px 10px 39px 0px rgba(74,74,74,1);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

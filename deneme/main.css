@@ -63,3 +63,32 @@ body {
         width: auto;
     }
 }
+
+
+/*       */
+
+.up-icon {
+    display: none;
+}
+
+details[open] {
+    padding: 1rem;
+    background: #fff;
+}
+
+details summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+details[open] .up-icon {
+    display: block;
+}
+
+details[open] .down-icon {
+    display: none;
+}
+
+summary {
+    display: flex;
+}

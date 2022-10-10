@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.boxs {
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box h3 {
+    font-weight: bold;
+}
+
+.box {
+    background-color: #fff;
+}
+
+.boxs .box {
+    width: 30%;
+    border-radius: 15px;
+}
+
+.boxs .box div:first-child {
+    width: 100%;
+}
+
+.boxs .box div:not(div:first-child) {
+    padding: 1rem;
+}
+
+.boxs .box img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
