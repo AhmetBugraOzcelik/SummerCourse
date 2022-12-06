@@ -62,7 +62,7 @@ $('#boxs-dersler').slick({
       settings: {
         dots: false,
         arrows :true,
-        centerMode: false,
+        centerMode: true,
         slidesToShow: 2,
       }
     },

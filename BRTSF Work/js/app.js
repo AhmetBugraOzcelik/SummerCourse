@@ -4,11 +4,13 @@ menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
     menuOpen = true;
+    document.body.style.overflowY = 'hidden';
   }
 
   else {
     menuBtn.classList.remove('open');
     menuOpen = false;
+    document.body.style.overflowY = 'visible';
   }
 });
 
@@ -18,6 +20,19 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("nav");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 var lastScrollTop = 0;
 $(window).scroll(function(event){

@@ -73,7 +73,7 @@ header {
 
 #search-box > div {
     position: relative;
-     display: inline
+    display: inline
 }
 
 #search-box input {
@@ -83,6 +83,10 @@ header {
     padding: 0.3rem 1.5rem 0.3rem 0.5rem;
     border: 2px solid #636363;
     position: relative;
+}
+
+.dp-none {
+    display: none !important;
 }
 
 #search-box i {
@@ -125,27 +129,53 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
 
-.languages div {
+.languages > div:first-child {
     width: 25px;
     height: 25px;
     border-radius: 15px;
-    border: 1px solid black;
+    border: 1px solid #DFDFDF;
 }
 
 .languages div img {
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 100%;
     width: 100%;
     height: 100%;
 }
 
+.languages .dp-content {
+    display: none;
+    position: absolute;
+    padding: 0.5rem 1rem;
+    right: -18px;
+}
 
+.dp-content div {
+    width: 25px;
+    margin-bottom: 0.5rem;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #DFDFDF;
+    cursor: pointer;
+}
+
+.languages:hover .dp-content {
+    display: block;
+}
 
 nav {
     width: 100%;
     background: #16BDCF;
+    z-index: 9999;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav .container > div {
@@ -173,7 +203,7 @@ nav a:first-child {
     background: gray;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(244, 244, 244, .2);
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out; */
 }
 
 .btn-burger::before,
@@ -202,10 +232,76 @@ nav a:first-child {
 
 .box {
     /* position: absolute;
-    width: 100% !important;
-    height: 100vh !important; */
+    /* width: 100% !important;
+    height: 100% !important; */
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.box > div {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin-bottom: 5rem;
+}
+
+.box > div > div:first-child {
+    font-size: 2.5em;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+
+.box > div > div:first-child h1 {
+    font-weight: normal;
+}
+
+.buttons-box {
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    align-items: center;
+}
+
+.buttons-box div a:hover {
+    background-color: rgba(22,189,207,0.7);
+}
+
+.buttons-box div a {
+    background-color: #fff;
+    color: #000;
+    opacity: 0.8;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.buttons-box a {
+    border: 2px solid #fff;
+    border-radius: 25px;
+}
+
+.buttons-box a {
+    padding: 0.6rem 5rem;
+}
+
+.box-text {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
 }
 
 .slick-next {
@@ -216,10 +312,13 @@ nav a:first-child {
 .slick-prev {
     left: 15px !important;
     color: #fff !important;
+    z-index: 1;
 }
 
 .box img {
     width: 100%;
+    filter: brightness(70%);
+
 }
 
 
@@ -227,32 +326,42 @@ nav a:first-child {
     .container {
         max-width: 768px;
     }
+
+    .box-text {
+        width: 40%;
+        font-size: 1em;
+    }
+
+    .box > div > div:first-child {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 768px) {
-
+/* 
     #logo {
         display: none;
-    }
+    } */
 
     #nav-items {
         position: fixed;
         left: -100%;
-        top: 113px;
+        top: 130px;
         gap: 0;
         flex-direction: column;
         background: #DFEBF3;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        overflow: scroll;
+        /* overflow: scroll; */
+        z-index: 9999;
     }
 
     #nav-items.active {
-        z-index: 9999;
         left: 0;
-        height: 82%;
+        height: 79%;
         background: blue;
+        z-index: 9999;
     }
 
     .burger-menu {
@@ -273,7 +382,6 @@ nav a:first-child {
         transform: translate(-50px);
         background: transparent;
         box-shadow: none;
-
     }
 
     .burger-menu.open .btn-burger::before {
@@ -286,6 +394,7 @@ nav a:first-child {
 
     nav {
         height: 80px;
+        z-index: 9999;
         
     }
 
@@ -295,21 +404,57 @@ nav a:first-child {
     }
 
     #nav-items.scroll {
-        top: 80px;
-        height: 88%;
-        
+        top: 80px !important;
+        height: 88% !important;
     }
 
     #wp {
         font-size: 0.8em;
     }
 
-    #search-box {
+    /* #search-box {
         width: 50%;
+    } */
+
+    .dp-none-header {
+        display: none !important;
     }
 
     #search-box > div {
         width: 60%;
+    }
+
+    .dp-none {
+        display: flex !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    nav a:first-child {
+        padding-left: 1.2rem;
+    }
+
+    .box > div {
+        margin-bottom: 2rem
+    }
+
+    .box > div > div:first-child {
+        font-size: 1.2em;
+    }
+
+    .box-text {
+        margin: 0.5rem;
+        width: 60%;
+        font-size: 0.8em;
+    }
+
+    @media (max-width : 659px) {
+        #nav-items {
+            top: 115px;
+        }
+
+        #nav-items.active {
+            height: 82%;
+        }
     }
 }
 
@@ -323,16 +468,57 @@ nav a:first-child {
         font-size: 0.8em;
     }
 
-    nav {
+    /* nav {
         height: 50px;
     }
 
     .burger-menu {
         height: 50px;
-    }
+    } */
 
     #nav-items {
-        top: 80px;
-        height: 88% !important;
+        top: 105px;
+        height: 83% !important;
+    }
+
+    .icons-left > div {
+        margin-left: 0.1rem;
+    }
+
+    .buttons-box a {
+        padding: 0.3rem 2rem;
+        font-size: 0.6rem;
+    }
+
+    .box > div {
+        margin-bottom: 1rem;
+    }
+
+    .box > div > div:first-child {
+        font-size: 0.8em;
+    }
+    
+    .box-text {
+        font-size: 0.6em;
+    }
+
+    .box > div > div:first-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width : 380px) {
+
+    #wp div:first-child {
+        font-size: 1.2rem !important;
+    }
+
+    #wp div:last-child {
+        display: none;
+    }
+
+    .box-text {
+        width: 80%;
+        font-size: 0.6em;
     }
 }
