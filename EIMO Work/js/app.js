@@ -131,3 +131,75 @@ $('.boxs-section4').slick({
     }
   ]
 });
+
+$(".our-partners-slider").slick({
+
+  slidesToShow: 5,
+
+  slidesToScroll: 1,
+
+  autoplay: true,
+
+  speed: 2000,
+
+  autoplaySpeed: 1,
+
+  arrows: false,
+
+  dots: false,
+
+  pauseOnHover: false,
+
+  responsive: [
+
+    {
+
+      breakpoint: 1200,
+
+      settings: {
+
+        slidesToShow: 4,
+
+      },
+
+    },
+
+    {
+
+      breakpoint: 992,
+
+      settings: {
+
+        slidesToShow: 3,
+
+      },
+
+    },
+
+    {
+
+      breakpoint: 580,
+
+      settings: {
+
+        slidesToShow: 2,
+
+      },
+
+    },
+
+    {
+
+      breakpoint: 480,
+
+      settings: {
+
+        slidesToShow: 1,
+
+      },
+
+    },
+
+  ],
+
+});
